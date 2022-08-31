@@ -1,0 +1,11 @@
+python amc_search.py ^
+    --job=train ^
+    --model=yolov3tiny ^
+    --dataset=imagenet ^
+    --preserve_ratio=0.5 ^
+    --lbound=0.2 ^
+    --rbound=1 ^
+    --reward=acc_reward ^
+    --data_root=<Enter path to the dataset here> ^
+    --ckpt_path=./checkpoints/yolov3tiny_imagenet.pth ^
+    --seed=2018
